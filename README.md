@@ -16,16 +16,20 @@ One static HTML file, no build step, no dependencies. Open `index.html` through 
 ## What's on the page
 
 - **Title:** GitHub for Electronics
-- **Subline:** Sign up to access **9,697** open-source PCB designs. (the public board count on
+- **Subline:** Sign up to access **9,698** open-source PCB designs. (the public board count on
   boardrepo.com on 2026-11-21)
 - **Swapping line:** "Design with ___". Each word types on, holds about 1.7 s, then deletes for
   the next: references, confidence, speed, a team, a change log. With reduced motion turned on,
   the words switch without typing. Screen readers get the full sentence once.
 - **Sign-in:** Continue with GitHub (primary), Continue with Google, Continue with email, then
   "New here? Signing in creates your account."
-- **Library strip:** 14 real public boards (HackRF, torvalds/guitarpedal, Glasgow, SmartKnob,
-  The Open Book, DeskHop and more) scrolling slowly, each labelled owner/slug. The
-  images are the render files your home page already serves (`/api/files/<id>?view=1`).
+- **Boards:** real public boards (HackRF, torvalds/guitarpedal, Glasgow, SmartKnob, The Open
+  Book, DeskHop and more), unboxed and slightly tilted, each labelled owner/slug in Plex Mono.
+  Phone: they drift slowly across a PCB-green band under the buttons. Desktop: three rest on
+  your hero trace art, which bleeds off the right half like your home page. The images are the
+  render files your home page already serves (`/api/files/<id>?view=1`).
+- **Look:** your landing tokens and type (paper, forest ink, PCB green, BoardRepo Display), and
+  buttons styled after your `/signin` page, so the hand-off to sign-in feels like one site.
 
 Mobile first: most visitors come from Instagram's in-app browser. On a 390 px phone the title,
 the swapping line and all three buttons fit on the first screen.
@@ -71,7 +75,7 @@ Open questions:
 ## Files
 
 - `index.html`: the page (inline CSS and JS)
-- `boardrepo-mark.svg`, `forest-grain.webp`: BoardRepo's own mark and grain texture from
-  boardrepo.com
+- `boardrepo-mark.svg`, `circuit-hero-green.webp`, `cream-grain.webp`: BoardRepo's own mark,
+  hero art and grain from boardrepo.com
 - `fonts/`: Inter (BoardRepo Display is Inter 800) and IBM Plex Mono, both SIL Open Font License
 - `screenshots/`: the images above
